@@ -1,0 +1,500 @@
+/* General*/
+@font-face {
+    font-family: 'Sketch_Gothic_School';
+    src: url("../fonts/Sketch\ Gothic\ School.ttf");
+}
+
+@font-face {
+    font-family: 'AlmendraDisplay-Regular';
+    src: url("../fonts/Almendra-Bold.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*balises*/
+body {
+    background-image: url(../img/hydre.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    font-family: 'AlmendraDisplay-Regular';
+}
+
+header {
+
+    background-color:rgba(200,200,200,0.9);
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1,
+h2 {
+    font-family: 'Sketch_Gothic_School';
+    margin: 2%;
+}
+
+h1 {
+    font-size: 400%;
+    text-shadow: 2px 2px 2px gold;
+}
+
+h2 {
+    font-size: 300%;
+    text-shadow: 2px 2px 2px whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 2%;
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px black;
+}
+
+p,
+li {
+    font-size: 120%;
+}
+
+section {
+    background-color: rgba(200, 200, 200, 0.9);
+
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+li ul{
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-left: 192px;
+    top:0;
+    width: 200px;
+ }
+
+ p{
+    margin: 5vw;
+ }
+
+
+/* pseudo classes*/
+
+.invisible{
+    transition-property: color;
+    transition-duration: 3s;
+}
+
+.invisible:hover{
+    color:rgba(200, 200, 200, 0);
+    background-color: transparent;
+}
+
+.feu:hover {
+    background-image: url("../img/fire.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.tonerre:hover {
+    background-image: url("../img/tonerre.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.eau:hover {
+    background-image: url("../img/tsunami.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.fireball{
+    visibility: hidden;
+}
+
+/*classes*/
+
+/*general*/
+
+.float.left {
+    float: left;
+}
+.centrer {
+    text-align: center;
+}
+
+.float.right {
+    float: right;
+}
+
+/*header*/
+.hgauche {
+    background-image: url("../img/HD.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 19vw;
+
+}
+
+.hmilieu{
+    width: 56vw;
+}
+
+.hdroite {
+
+    background-image: url("../img/DD.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+}
+
+/*corps*/
+.corps {
+    text-align: center;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+.corps img {
+    padding: 1vw;
+}
+
+
+.sortileges{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+    background-image: url("../img/library.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sortileges .image{
+    width: 30vw;
+    padding: 0%;
+}
+
+.sortileges .texte{
+    text-align: center;
+    position: relative;
+    width: 60%;
+    padding: 0%;
+}
+
+
+
+.xp{
+    background-image: url("../img/ship2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5%;
+}
+.xp p, .loisirs li{
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px black;
+
+}
+
+.xp2{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.loisirs{
+    background-image: url("../img/hippo.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    
+}
+.loisirs li{
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 0px;
+}
+
+/*flipcard*/
+
+.flipcard{
+    background-color: transparent;
+    position: relative;
+    height: 300px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+
+    transform-style: preserve-3d;
+}
+
+.interieur{
+    position:relative;
+    transition: 3s ;
+    transform-style: preserve-3d;
+}
+.facea,.faceb{
+    position:absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    backface-visibility: hidden;
+}
+
+.flipcard:hover .interieur{
+    transform: rotateY(180deg);
+}
+
+.facea{
+    background-image: url(../img/alarian.png);
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    
+}
+.faceb{
+    background-image: url("../img/ystaad.png");
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
+/* grimoire */
+
+#grimoire{
+    display:block;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+#grimoire input{
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 35px;
+    height: 25px;
+    opacity: 0;
+}
+
+#grimoire span{
+    position: relative ;
+    display: block;
+    z-index: 1;
+    width: 34px;
+    height: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    transform-origin: 16px 0px;
+    transition: transform 0.5s,
+                opacity 0.5s;
+}
+.feuille{
+    background-color: beige;
+}
+.couverture{
+    background-color: chocolate;
+}
+
+#grimoire span:first-child{
+    transform-origin: 0% 0%;
+}
+
+#grimoire span:nth-last-child(2){
+    transform-origin: -1px 0px;
+}
+#grimoire span:nth-last-child(3){
+    transform-origin:5px 0px ;
+}
+
+#grimoire input:checked ~ span{
+    transform:rotate(90deg)translate(-2px, -1px);
+}
+
+#grimoire input:checked ~ span:nth-last-child(3){
+   
+    transform: rotate(-90deg);
+}
+#grimoire input:checked ~ span:nth-last-child(2){
+    transform: rotate(-90deg) translate(0, -1px);
+}
+
+#niveaux{
+    position: absolute;
+    width: 200px;
+    margin: 0px 0 0 -450px;
+    background-color:chocolate;
+    border-radius: 5px;
+    transform-origin: 0% 0%;
+    transition: transform 2s;
+}
+
+#grimoire input:checked ~ ul{
+    transform: translate(200%, 0);
+
+}
+
+/*menu deroulant*/
+
+li ul li:hover{
+    background-color: chocolate;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+li:hover ul{
+    display: block;
+}
+
+li:hover{
+    background-color: whitesmoke;
+    color: chocolate;
+}
+
+.lvl1{
+    top: 30px;
+}
+
+.lvl2{
+    top: 60px; 
+}
+
+.lvl3{
+    top: 90px;
+}
+.lvl4{
+    top: 120px;
+}
+.lvl5{
+    top: 150px;
+}
+
+.chocolate{
+    color: chocolate;
+    text-shadow: none;
+    font-size: 1em;
+}
+
+
+@media  screen and (max-width: 900px) {
+    
+    header{
+        background-color:rgba(200,200,200,0.7);
+    }
+    
+    .hgauche,.hdroite{
+        display: none;
+    }
+    
+    .sortileges .image{
+        width: 25vw;
+    }
+
+    .sortileges{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .burger{
+        position: absolute;
+        display: block;
+        top: 78vh;
+        left: 45vw;
+    }
+    
+    .nint{
+        position: absolute;
+        left: -43px;
+        
+    }
+    
+    #niveaux{
+        
+        position: absolute;
+        width: 150px;
+        margin: 0px 0 0 -550px;
+        background-color:chocolate;
+        border-radius: 5px;
+        transform-origin: 0% 0%;
+        transition: transform 2s;
+    }
+
+    .xp,.corps{
+        margin: 0%;
+    }
+    
+    .xp h2{
+        margin-top: 0%;
+    }    
+    .xp img{
+        max-width: 30vw;
+    }
+    
+    .xp .img{
+        margin-left: 35vw;
+        margin-right: 35vw;
+    }
+    
+    .xp{
+        display: flex;
+        flex-direction: column;
+    }
+    .xp2{
+        flex-direction: column;
+    }
+    
+    p{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .image img{
+        width: 25vw;
+    }
+}
+@media  screen and (max-width: 480px) {
+    
+    .burger{
+        position: absolute;
+        display: block;
+        top: 94vh;
+        left: 41vw;
+    }
+    #grimoire input:checked ~ ul{
+        transform: translate(245%, 0);
+    
+    }
+    body {
+        background-image: url(../img/hydre.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100vh;
+        width: 100vw;
+        font-family: 'AlmendraDisplay-Regular';
+    }
+    
+    
+}
